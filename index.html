@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTS REEL CRAFTERS | Expert Reel Creation for Astrology Influencers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .brand-bg {
+            background-color: #0e3b49;
+        }
+        .brand-text {
+            color: #e9c46a;
+        }
+        .brand-border {
+            border-color: #e9c46a;
+        }
+        .testimonial-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .package-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+        .feature-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .icon-check {
+            color: #4CAF50;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            background-color: #20BA5C;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Custom animations */
+        @keyframes floatUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes scaleIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .animate-float-delay-1 {
+            animation: floatUp 0.8s ease-out 0.1s both;
+        }
+        .animate-float-delay-2 {
+            animation: floatUp 0.8s ease-out 0.3s both;
+        }
+        .animate-float-delay-3 {
+            animation: floatUp 0.8s ease-out 0.5s both;
+        }
+        /* Floating Animation for WhatsApp Button */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .float-animation {
+            animation: float 2.5s ease-in-out infinite;
+        }
+        .creator-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #e9c46a;
+            margin: 0 auto;
+        }
+        .creator-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .testimonial-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #e9c46a;
+        }
+        .testimonial-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .trusted-section {
+            background-color: #091e25;
+            color: white;
+            padding: 4rem 0;
+        }
+        .client-testimonial {
+            background-color: #102c35;
+            border-radius: 8px;
+            border-left: 3px solid #e9c46a;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="brand-bg py-6" data-aos="fade-down" data-aos-duration="800">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://page.genspark.site/v1/base64_upload/ff1a369a0b777c47bcc5f695373a5e21" alt="YTS REEL CRAFTERS Logo" class="h-20">
+            </div>
+            <div>
+                <a href="https://wa.me/918235143996?text=GROWTH" target="_blank" class="whatsapp-btn font-bold py-2 px-6 rounded-full shadow-md transition duration-300 flex items-center" data-aos="fade-left" data-aos-delay="300">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Chat Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 brand-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-float-delay-1"><span class="brand-text">2X Your Views & Sales</span> in Just 8 Weeks</h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto animate-float-delay-2">Premium content creation services for astrology influencers with 100K-300K followers ready to scale their impact</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 animate-float-delay-3">
+                <a href="https://wa.me/918235143996?text=PREMIUM" target="_blank" class="whatsapp-btn font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 text-lg flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Get Premium Package
+                </a>
+                <a href="https://wa.me/918235143996?text=BASIC" target="_blank" class="text-white border-2 border-white hover:bg-white hover:text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300 text-lg flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Get Basic Package
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Trusted By <span class="brand-text">Astrology Creators Across India</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="creator-circle mx-auto mb-4">
+                        <img src="https://postimg.cc/CZbCS6DV" alt="AstroKaran" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-bold brand-text mb-1">AstroKaran</h3>
+                    <p class="text-gray-300">26K+ followers</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="creator-circle mx-auto mb-4">
+                        <img src="https://postimg.cc/N2jjC5Yz" alt="Astrologistar" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-bold brand-text mb-1">Astrologistar</h3>
+                    <p class="text-gray-300">332K+ followers</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="creator-circle mx-auto mb-4">
+                        <img src="https://postimg.cc/Sjg6S9Xj" alt="LadyAstrologer" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-bold brand-text mb-1">LadyAstrologer</h3>
+                    <p class="text-gray-300">309K+ followers</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="creator-circle mx-auto mb-4">
+                        <img src="https://postimg.cc/RN3HvD5b" alt="TheAkashHasija" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-bold brand-text mb-1">TheAkashHasija</h3>
+                    <p class="text-gray-300">80K+ followers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Promise -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Our Promise To You</h2>
+                <div class="w-20 h-1 brand-bg mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We become your Growth Partner to help you 2X your views and sales in 8 weeks or we work an extra week for free.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 brand-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">1M+ Views Per Week</h3>
+                    <p class="text-gray-600">Across all your Reels in just 8 weeks</p>
+                </div>
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 brand-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2X Increase</h3>
+                    <p class="text-gray-600">In DM inquiries from potential clients</p>
+                </div>
+                <div class="text-center p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 brand-bg rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wallet text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">20-40% More</h3>
+                    <p class="text-gray-600">Paid bookings for your astrology services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">What We Do For You</h2>
+                <div class="w-20 h-1 brand-bg mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="flip-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 brand-bg rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Viral Trend Research</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">We analyze competitors and identify video formats that consistently perform well in the astrology niche.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="flip-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 brand-bg rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold">High-Converting Scripts</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">Custom-written content designed for maximum reach, engagement, and conversion.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="flip-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 brand-bg rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Pro-Quality Video Editing</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">Stunning visuals that stand out in the feed and keep viewers watching until the end.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="flip-up" data-aos-delay="400">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 brand-bg rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Client-Focused Content</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">Strategic call-to-action placement that drives more DMs and sales for your services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="premium" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Our Packages</h2>
+                <div class="w-20 h-1 brand-bg mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose the perfect solution to grow your astrology business
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8 mt-8">
+                <!-- Premium Package -->
+                <div class="package-card flex-1 p-8 border-t-8 brand-border" data-aos="zoom-in-right" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-2">The AstroInfluence Accelerator</h3>
+                    <p class="text-gray-500 mb-6">Premium Growth Package for Astrology Creators</p>
+                    
+                    <div class="flex items-end mb-6">
+                        <span class="text-4xl font-bold">35,000</span>
+                        <span class="text-gray-500 ml-1">/month</span>
+                    </div>
+                    <p class="text-gray-600 mb-8">70,000 for 8 weeks</p>
+
+                    <p class="mb-6 font-medium">Ideal for: Astrology creators with 100K-300K followers ready to explode their audience and client base without burning out.</p>
+
+                    <div class="mb-8">
+                        <h4 class="font-bold text-lg mb-4">What's Included:</h4>
+                        
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            <i class="fas fa-check-circle icon-check text-lg"></i>
+                            <div>
+                                <p class="font-bold">Done-For-You Viral Content Creation</p>
+                                <p class="text-gray-600">18-20 ready-to-upload Reels crafted each month</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="150" data-aos-anchor-placement="top-bottom">
+                            <i class="fas fa-check-circle icon-check text-lg"></i>
+                            <div>
+                                <p class="font-bold">Full Account Growth Management</p>
+                                <p class="text-gray-600">Strategic posting and algorithm optimization</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+                            <i class="fas fa-check-circle icon-check text-lg"></i>
+                            <div>
+                                <p class="font-bold">Community Engagement Boosting</p>
+                                <p class="text-gray-600">Strategic comment replies and story uploads</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="250" data-aos-anchor-placement="top-bottom">
+                            <i class="fas fa-check-circle icon-check text-lg"></i>
+                            <div>
+                                <p class="font-bold">Profile Conversion Optimization</p>
+                                <p class="text-gray-600">Magnetic bio rewrite and highlights setup</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                            <i class="fas fa-check-circle icon-check text-lg"></i>
+                            <div>
+                                <p class="font-bold">VIP Shooting & Minor Problem Support</p>
+                                <p class="text-gray-600">Personal shooting guide and technical help</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <h4 class="font-bold text-lg mb-4">Exclusive Bonuses:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-gift text-yellow-500 mr-3 mt-1"></i>
+                                <span>Weekly 1-on-1 Private Strategy Calls</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-gift text-yellow-500 mr-3 mt-1"></i>
+                                <span>Daily Direct Access via WhatsApp Business</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-gift text-yellow-500 mr-3 mt-1"></i>
+                                <span>Weekly Trend & Opportunity Report</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-gift text-yellow-500 mr-3 mt-1"></i>
+                                <span>Step-by-Step Content System Guide</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-lg mb-8" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                        <h4 class="font-bold text-lg mb-4 text-green-700">The AstroInfluence Double Guarantee</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-bold">Performance Guarantee:</p>
+                                <p>We aim to 2x your views in 8 weeks or extend your campaign by 2 weeks for free.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 p-4 rounded-lg text-center mb-8" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
+                        <p class="font-bold text-yellow-800">Limited-Time Founders Launch Offer:</p>
+                        <p>Before 5 April 2025 get an exclusive 5,000 OFF your first month.</p>
+                    </div>
+
+                    <a href="https://wa.me/918235143996?text=PREMIUM" target="_blank" class="block w-full py-3 whatsapp-btn text-center rounded-lg font-bold transition duration-300 flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Get Premium Package
+                    </a>
+                </div>
+
+                <!-- Basic Package -->
+                <div id="basic" class="package-card flex-1 p-8 border-t-8 border-gray-400" data-aos="zoom-in-left" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-2">Basic Package</h3>
+                    <p class="text-gray-500 mb-6">Essential Editing Service</p>
+                    
+                    <div class="flex items-end mb-6">
+                        <span class="text-4xl font-bold">10,000</span>
+                        <span class="text-gray-500 ml-1">/month</span>
+                    </div>
+
+                    <p class="mb-6 font-medium">Best for: Creators who already have a content plan and just need professional editing.</p>
+
+                    <div class="mb-8">
+                        <h4 class="font-bold text-lg mb-4">What's Included:</h4>
+                        
+                        <div class="feature-item" data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            <i class="fas fa-check-circle icon-check text-lg"></i>
+                            <div>
+                                <p class="font-bold">Video Editing (20 Reels/month)</p>
+                                <p class="text-gray-600">10 Facecam + 10 Faceless videos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8" data-aos="fade-up" data-aos-delay="150" data-aos-anchor-placement="top-bottom">
+                        <h4 class="font-bold text-lg mb-4">You Handle:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-gray-400 mr-3 mt-1"></i>
+                                <span>Scripting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-gray-400 mr-3 mt-1"></i>
+                                <span>Filming</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-gray-400 mr-3 mt-1"></i>
+                                <span>Ideation</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+                        <h4 class="font-bold text-lg mb-4">We Handle:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-gray-400 mr-3 mt-1"></i>
+                                <span>Professional video editing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-gray-400 mr-3 mt-1"></i>
+                                <span>Visual effects and graphics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-gray-400 mr-3 mt-1"></i>
+                                <span>Music and sound design</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <p class="font-medium">Note: No performance guarantee with this package</p>
+                    </div>
+
+                    <a href="https://wa.me/918235143996?text=BASIC" target="_blank" class="block w-full py-3 whatsapp-btn text-center rounded-lg font-bold transition duration-300 flex items-center justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Get Basic Package
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="py-16 brand-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-white">What Our <span class="brand-text">Clients Say</span></h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="client-testimonial" data-aos="fade-right" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="testimonial-circle mr-4">
+                            <img src="https://postimg.cc/CZbCS6DV" alt="Karan Deep" class="rounded-full">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Karan Deep</h4>
+                            <p class="text-gray-300 text-sm">Astro Consultant, 26K followers</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-100">"Since working with YTS Reel Crafters, my engagement has tripled! Their understanding of astrology content is exceptional, and they know exactly how to edit to maximize viewer retention."</p>
+                </div>
+
+                <div class="client-testimonial" data-aos="fade-left" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="testimonial-circle mr-4">
+                            <img src="https://postimg.cc/N2jjC5Yz" alt="Anil Gupta" class="rounded-full">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Anil Gupta</h4>
+                            <p class="text-gray-300 text-sm">Zodiac Specialist, 332K followers</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-100">"I was struggling to convert my followers into paying clients. YTS Reel Crafters helped me develop a content strategy that not only grew my audience but increased my bookings by 35% in just two months!"</p>
+                </div>
+
+                <div class="client-testimonial" data-aos="fade-right" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="testimonial-circle mr-4">
+                            <img src="https://postimg.cc/Sjg6S9Xj" alt="Ayushi Joshi" class="rounded-full">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Ayushi Joshi</h4>
+                            <p class="text-gray-300 text-sm">Vedic Astrologer, 309K followers</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-100">"The team at YTS Reel Crafters transformed my content strategy. Within just 6 weeks, I saw a 200% increase in views and gained over 40K new followers. Their editing makes my readings so much more impactful!"</p>
+                </div>
+
+                <div class="client-testimonial" data-aos="fade-left" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="testimonial-circle mr-4">
+                            <img src="https://postimg.cc/RN3HvD5b" alt="Akash" class="rounded-full">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Akash</h4>
+                            <p class="text-gray-300 text-sm">Business Coach, 80K followers</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-100">"My Edits never looked this professional before. The visual effects and storytelling techniques they use have completely transformed how my audience engages with my content. Worth every rupee!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your New Reality -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Your New Reality</h2>
+                <div class="w-20 h-1 brand-bg mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                <div class="flex" data-aos="fade-right" data-aos-delay="100">
+                    <div class="mr-4 flex-shrink-0">
+                        <div class="w-12 h-12 brand-bg rounded-full flex items-center justify-center">
+                            <i class="fas fa-eye text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">10x Your Visibility</h3>
+                        <p class="text-gray-600">Dramatically increase your reach across Instagram with content that gets shared and saved.</p>
+                    </div>
+                </div>
+
+                <div class="flex" data-aos="fade-left" data-aos-delay="100">
+                    <div class="mr-4 flex-shrink-0">
+                        <div class="w-12 h-12 brand-bg rounded-full flex items-center justify-center">
+                            <i class="fas fa-comment-dollar text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Double Client Inquiries</h3>
+                        <p class="text-gray-600">Watch your DMs fill with booking requests from engaged followers ready to pay for your services.</p>
+                    </div>
+                </div>
+
+                <div class="flex" data-aos="fade-right" data-aos-delay="200">
+                    <div class="mr-4 flex-shrink-0">
+                        <div class="w-12 h-12 brand-bg rounded-full flex items-center justify-center">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Build a Loyal Audience</h3>
+                        <p class="text-gray-600">Create a community of high-paying clients who trust your expertise and refer others.</p>
+                    </div>
+                </div>
+
+                <div class="flex" data-aos="fade-left" data-aos-delay="200">
+                    <div class="mr-4 flex-shrink-0">
+                        <div class="w-12 h-12 brand-bg rounded-full flex items-center justify-center">
+                            <i class="fas fa-clock text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Free Up Your Time</h3>
+                        <p class="text-gray-600">Focus on your passion—helping people with your astrology skills—not managing content creation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 brand-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Ready to Become the Go-To Astrologer?</h2>
+                <p class="text-xl max-w-3xl mx-auto mb-8">
+                    Let's build your empire together. Contact us now to get started.
+                </p>
+                <div class="max-w-md mx-auto" data-aos="zoom-in">
+                    <a href="https://wa.me/918235143996?text=GROWTH" target="_blank" class="block py-4 px-8 bg-white hover:bg-gray-100 text-gray-800 rounded-lg shadow-lg transition duration-300 whatsapp-btn flex items-center justify-center mx-auto text-lg font-bold float-animation">
+                        <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                        <span>Message "GROWTH" on WhatsApp</span>
+                    </a>
+                    <p class="text-sm mt-4 text-gray-300">We'll respond within 24 hours to discuss your specific needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <img src="https://page.genspark.site/v1/base64_upload/ff1a369a0b777c47bcc5f695373a5e21" alt="YTS REEL CRAFTERS Logo" class="h-16">
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="mb-2">&copy; 2024 YTS REEL CRAFTERS. All rights reserved.</p>
+                    <p class="text-gray-400 text-sm">Specialized in Astrology Content Creation</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 right-8 z-50" data-aos="fade-up" data-aos-delay="1000">
+        <a href="https://wa.me/918235143996?text=GROWTH" target="_blank" class="block w-16 h-16 rounded-full whatsapp-btn flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 float-animation">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: false,
+            mirror: false,
+            offset: 120,
+            anchorPlacement: 'top-bottom'
+        });
+
+        // Additional animation effects for elements already visible on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add scroll-triggered animation effects to elements
+            const scrollElements = document.querySelectorAll('.feature-item, .package-card, .testimonial-card, .client-testimonial');
+            
+            // Add hover effects to buttons
+            const buttons = document.querySelectorAll('a[href^="https://wa.me/"]');
+            buttons.forEach(button => {
+                button.addEventListener('mouseover', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                button.addEventListener('mouseout', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
